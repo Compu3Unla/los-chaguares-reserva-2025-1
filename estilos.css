@@ -6,6 +6,29 @@
     font-weight: bold;
 }
 
+body{
+    font-family: 'Zilla Slab', serif;
+}
+
+article img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+    transition: filter 0.3s ease-in-out; 
+}
+
+article:hover img {
+    filter: grayscale(100%);
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+.nav link{
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+}
+
 .social-media-fixed-menu-wrapper {
     width: 100%;
     position: fixed; 
