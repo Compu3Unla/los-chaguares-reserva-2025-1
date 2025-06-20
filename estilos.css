@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -275,6 +276,41 @@ body.home-page .navbar {
     height: auto;
     object-fit: cover;
     margin-bottom: 0.5em;
+}
+
+
+.tarjeta-act {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tarjeta-act img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+.tarjeta-act h2 {
+    background-color: #98C0AB;
+    color: black;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.tarjeta-act p {
+    padding: 15px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
 .carousel-inicio {
@@ -1831,4 +1867,4 @@ footer {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
-}
+
