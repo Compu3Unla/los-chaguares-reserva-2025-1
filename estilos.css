@@ -112,7 +112,7 @@ body{
     line-height: 1.5;
 }
 
-.tarjeta-act .el-boton {
+.el-boton {
     background-color: #33A152;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -485,6 +485,113 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reservas {
+    max-width: 800px; 
+    margin: 40px auto 20px auto; 
+    text-align: center;
+    padding: 0 20px; 
+}
+
+#reservas h1 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#reservas p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+
+.flex-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 30px auto; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
+}
+
+
+.columna-izquierda {
+    flex: 1; 
+    min-width: 300px; 
+    background-color: #CCFDE0; 
+    padding: 30px;
+    flex-basis: 60%; 
+    max-width: 700px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.columna-derecha {
+    flex: 1; 
+    min-width: 300px; 
+    background-color: #98C0AB; 
+    padding: 30px;
+    flex-basis: 30%; 
+    max-width: 350px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+#mapita-izq h2,
+#derecha-llegar h2 {
+    color: black;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#mapita-izq p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#mapita-izq img {
+    max-width: 100%; 
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.map-buttons {
+    display: flex; 
+    gap: 15px; 
+    margin-top: 10px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#derecha-llegar p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
 
 
 
