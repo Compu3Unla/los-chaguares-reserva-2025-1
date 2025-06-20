@@ -46,43 +46,69 @@
                 <h1>Actividades</h1>
                 <section id="Actividades">
                     <article class="tarjeta-act">
-                        <img src="img/actividad2.png" alt="Visita guiada">
+                        <img src="img/actividad2.png" width="394px" height="383px" alt="Visita guiada">
                         <h2>Visita Guiada</h2>
                         <p>Caminatas por distintos senderos peatonales en los cuales se hace interpretación de la naturaleza, acompañadas por guías.</p>
-                        <a href="https://chaguares.mitiendanube.com/" class="el-boton">¡Visitanos!</a>
+                        <a href="formulario.html" class="el-boton">¡Visitanos!</a>
                     </article>
                     <article class="tarjeta-act">
-                        <img src="img/actividad1.png" alt="Escuelas">
+                        <img src="img/actividad1.png" width="394px" height="383px" alt="Escuelas">
                         <h2>Escuelas</h2>
                         <p>Charlas, talleres, cursos, actividades pedagógicas, lúdicas y recreativas sobre distintos aspectos ecológicos del ambiente, a cargo de profesionales.</p>
                     </article>
                     <article class="tarjeta-act">
-                        <img src="img/actividad3.png" alt="Talleres">
+                        <img src="img/actividad3.png" width="394px" height="383px" alt="Talleres">
                         <h2>Talleres</h2>
                         <p>Espacio de reuniones y actividades de recreación y formación equipado con medios audiovisuales que ofrece la reserva.</p>
                     </article>
                     <article class="tarjeta-act">
-                        <img src="img/actividad4.png" alt="Avistamiento de aves">
+                        <img src="img/actividad4.png" width="394px" height="383px" alt="Avistamiento de aves">
                         <h2>Avistamiento de aves</h2>
                         <p>En Chaguares se pueden realizar avistamientos solos o con guías especializados, para conocer los ambientes naturales más representativos del bosque</p>
                         <a href="mailto:chaguaresadm@gmail.com?subject=Avistamiento%20desde%20aves" class="el-boton">¡Reservá tu turno!</a>
                     </article>
                     <article class="tarjeta-act">
-                        <img src="img/actividad5.png" alt="Paseo por el río">
+                        <img src="img/actividad5.png" width="394px" height="383px" alt="Paseo por el río">
                         <h2>Paseo por el río</h2>
                         <p>Caminata guiada junto al riacho Tragadero con vistas, puente colgante y naturaleza chaqueña. Dura hasta 2 horas.</p>
                     </article>
                     <article class="tarjeta-act">
-                        <img src="img/actividad.png" alt="Centro de información">
+                        <img src="img/actividad.png" width="394px" height="383px" alt="Centro de información">
                         <h2>Centro de información</h2>
                         <p>Información sobre la biodiversidad del Chaco húmedo y las prácticas de conservación de la reserva.</p>
                     </article>
                 </section>
             </main>
 
-            <footer>
+              <footer>
+                <div class="foot-left">
+                 <p>©Todos los derechos reservados - Reserva Los Chaguares Chaco 2015 </p>
+                </div>
+                <div class="foot-right">
+                    <ul>
+                        <li><img src="img/logo-chaguares.png" width="126px" height="40px" alt="logo Chaguares"></li>
+                        <li><img src="img/chaco1.png" alt="logo Chaco" width="60px" height="40px"></li>
+                        <li><img src="img/chacoo.png" alt="logo Mas info chaco" width="54" height="52px"></li>
+                    </ul>
+                </div>
+              </footer>  
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const menuButton = document.querySelector('.social-media-fixed-menu ul li > a');
+                            const parentLi = menuButton.closest('li');
 
-            </footer>
-                
+                            menuButton.addEventListener('click', function(event) {
+                                event.preventDefault(); 
+
+                                parentLi.classList.toggle('active');
+                            });
+
+                            document.addEventListener('click', function(event) {
+                                if (!parentLi.contains(event.target) && parentLi.classList.contains('active')) {
+                                    parentLi.classList.remove('active'); 
+                                }
+                            });
+                        });
+                    </script>
             </body>
 </html>

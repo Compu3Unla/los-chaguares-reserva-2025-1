@@ -1,81 +1,591 @@
 @charset "utf-8";
 /* CSS Document */
 
-.nav link{
-    font-family: 'Zilla Slab', serif;
-    font-weight: bold;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .social-media-fixed-menu-wrapper {
-    width: 100%;
-    position: fixed; 
-    top: 0 ; /*ver para arreglar*/
-    left: 0; /*ver para arreglar*/
-    z-index: 999; 
-    background-color: #f0f0f0; 
-    padding: 5px 20px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
 }
-
 .social-media-fixed-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    justify-content: flex-end; 
 }
-
 .social-media-fixed-menu ul li {
-    margin-left: 15px; 
+    position: relative;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+.social-media-fixed-menu ul li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-media-fixed-menu ul li img {
-    width: 30px; 
+.social-media-fixed-menu ul li > a img { 
     height: 30px;
     vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media-fixed-menu ul li.active > a img { 
+    transform: rotate(45deg); 
 }
 
 .social-media-fixed-menu .dropdown {
-    display: none; 
-    position: absolute; /* O `relative` si quieres que el dropdown aparezca dentro del flujo normal */
-    /* top: 100%; */ /* Si es absolute, se posiciona debajo del elemento padre */
-    /* right: 0; */ /* Alinea a la derecha */
-    background-color: #fff;
-    border: 1px solid #ddd;
+    list-style: none;
     padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: auto;
+    right: auto;
+    left: 0; 
+    bottom: calc(100% + 10px);
+    background-color: transparent;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    /* min-width: 120px; */ /* Ancho mínimo para el dropdown */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    flex-direction: column;
+    align-items: center;
 }
 
-.social-media-fixed-menu ul li:hover .dropdown {
-    display: flex; /* Mostrar al pasar el ratón */
-    flex-direction: column; /* Iconos en columna dentro del dropdown */
+.social-media-fixed-menu ul li.active .dropdown {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
 }
 
 .social-media-fixed-menu .dropdown li {
     margin: 5px 0;
 }
 
-body{
-    font-family: 'Zilla Slab', serif;
+.social-media-fixed-menu .dropdown li a {
+    display: block;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
 
-.pajarohover img {
-    width: 200px; 
-    height: 150px; 
-    object-fit: cover; 
-    transition: filter 0.3s ease-in-out; 
+.social-media-fixed-menu .dropdown li a:hover {
+    transform: scale(1.05)
+}
+.social-media-fixed-menu .dropdown li img {
+    width: 30px;
+    height: 30px;
+    display: block;
 }
 
-.pajarohover:hover img {
-    filter: grayscale(100%);
-}
 
+/*QUE HACER*/
 
 #Actividades {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1000px;
 }
 
 .tarjeta-act {
@@ -88,9 +598,9 @@ body{
 }
 
 .tarjeta-act img {
-   width: 100%;
-   height: auto;
-   display: block;
+    width: 100%; 
+    height: auto;
+    display: block;
 }
 
 .tarjeta-act h2 {
@@ -127,376 +637,20 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main.quehacer-act {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+}
+
+main.quehacer-act h1 {
+    font-size: 2.5em;
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+/*PLANEA TU VISITA*/
 
 .reservas {
     max-width: 800px; 
@@ -505,18 +659,36 @@ body{
     padding: 0 20px; 
 }
 
+.reserva-boton {
+    background-color: #33A152;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 70px;
+    font-size: 0.9em;
+    text-align: center;
+    align-self: flex-start;
+}
+
+
 #reservas h1 {
     font-size: 2.5em;
+    margin-left:70px;
     color: black;
     margin-bottom: 15px;
 }
 
 #reservas p {
+    font-family: 'Inter', sans-serif;
     font-size: 1.1em;
     line-height: 1.6;
+    margin-left:70px;
     margin-bottom: 25px;
+    max-width: 760px;
 }
-
 
 
 .flex-container {
@@ -550,6 +722,7 @@ body{
     padding: 30px;
     flex-basis: 30%; 
     max-width: 350px; 
+    max-height: 200px;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -566,9 +739,12 @@ body{
 }
 
 #mapita-izq p {
+    font-family: 'Inter', sans-serif;
     font-size: 1em;
     line-height: 1.5;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #mapita-izq img {
@@ -588,15 +764,21 @@ body{
 }
 
 #derecha-llegar p {
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+
+
+/*ESCUELAS*/
+
 .escuelas-main {
     display: flex;
     justify-content: center; 
-    gap: 30px; 
+    gap: 60px; 
     padding: 40px 20px; 
     max-width: 1200px; 
     margin: 0 auto; 
@@ -611,7 +793,7 @@ body{
 
 .izquierda-escuela h1 {
     color: #000000;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
@@ -659,6 +841,7 @@ body{
 
 #edu-ambiental h2 {
     color: #000000;
+    text-align: center;
     font-size: 1.8em;
     margin-bottom: 25px;
 }
@@ -690,6 +873,8 @@ body{
     margin: 0; 
 }
 
+/*GALERIA*/
+
 .contenedor-video{
     width: 560px; 
     height: 315px; 
@@ -700,6 +885,7 @@ body{
     align-items: center; 
     padding: 50px;
     margin-bottom: 60px;
+    margin-left:180px;
 }
 
 
@@ -715,6 +901,7 @@ body{
     padding: 40px;
     max-width: 900px; 
     margin: 0 auto; 
+    margin-bottom: 80px;
 }
 
 #miniaturas img {
@@ -742,6 +929,11 @@ body{
 	position: absolute;
 	top: 0;
 	z-index: 10;
+}
+
+.la-galery h1{
+    font-size: 2.5em;
+    margin-left: 180px;
 }
 
 #galeria-oculta {
@@ -981,4 +1173,272 @@ body{
 	width: 100%;
 	height: 100vh;
 	z-index: 0;
+}
+
+/*FORMULARIO*/
+
+.formulario-principal {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px; 
+    padding: 40px 20px; 
+    max-width: 1200px; 
+    margin: 20px auto;
+    background-color: #fff; 
+    border-radius: 10px;
+}
+
+.lavisita {
+    flex: 2; 
+    min-width: 300px; 
+    padding-right: 20px; 
+    box-sizing: border-box; 
+}
+
+.derecha-precio {
+    flex: 1; 
+    min-width: 280px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    box-sizing: border-box; 
+}
+
+
+.lavisita h1 {
+    color: #000000; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.lavisita > p { 
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formulito {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #98C0AB;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.formulito label {
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.formulito input[type="email"],
+.formulito input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.formulito input[type="email"]:focus,
+.formulito input[type="text"]:focus {
+    border-color: #33A152;
+    outline: none;
+    box-shadow: 0 0 5px rgba(51, 161, 82, 0.2);
+}
+
+.formulito p.titulo {
+    font-weight: 600;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+
+.formulito label input[type="checkbox"],
+.formulito label input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1); 
+}
+
+.opciones-grupo {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-bottom: 10px; 
+}
+
+.opciones-grupo label {
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    cursor: pointer;
+    font-weight: normal; 
+    color: #444; 
+}
+
+
+.opciones-grupo label input[type="checkbox"],
+.opciones-grupo label input[type="radio"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0; 
+    accent-color: #33A152; 
+}
+
+.CBU{ 
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-size: 0.95em;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.button-file {
+    display: inline-block;
+    padding: 10px 15px; 
+    background-color: #33A152;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; 
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.button-file:hover {
+    background-color: #2a8a44;
+}
+
+#file-name {
+    font-size: 0.9em;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; 
+}
+
+.botones-formulario {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.botones-formulario input[type="submit"] {
+    background-color: #33A152; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.botones-formulario input[type="submit"]:hover {
+    background-color: #2a8a44; 
+}
+
+#precios,
+#importante {
+    background-color: #CCFDE0; 
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#precios h2,
+#importante h2 {
+    color: #000000; 
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+#precios p,
+#importante p {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #000000;
+}
+
+#precios .tarifa {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+#precios .aclaracion {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    color: #215B3C;
+    font-size: 0.9em;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+#importante p:last-child {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color:#AC9379;
+    color: #F0F8FF;
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.foot-left {
+    align-content: center;
+    padding-left: 20px; 
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.foot-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
 }

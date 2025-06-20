@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reserva Los Chaguares</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png" type= "image/x-icon">
+        <link rel="stylesheet" href="estilos.css">
+        
+    </head>
+        <body class="formulario-page">
+            <header class="main-header">
+                    <nav class="navbar">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/isologo-chaguares.png" alt="Logo Chaguares"></a>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="quehacer.html">QUE HACER</a></li>
+                            <li><a href="planeatuvisita.html">PLANEA TU VISITA</a></li>
+                            <li><a href="escuelas.html">ESCUELAS</a></li>
+                            <li><a href="galeria.html">GALERÍA</a></li>
+                        </ul>
+                            <nav class="social-media-fixed-menu">
+                                    <a href="#">
+                                        <img src="img/red-menu.png" alt="Abrir menú de redes sociales"> 
+                                    </a>
+                                        <ul class="dropdown">
+                                            <li><a href="https://www.facebook.com/ReservaNaturalLosChaguares" target="_blank"><img src="img/red-facebook.png" alt=""></a></li>
+                                            <li><a href="https://www.instagram.com/loschaguares/" target="_blank"><img src="img/red-instagram.png" alt=""></a></li>
+                                            <li><a href="https://www.youtube.com/@loschaguares" target="_blank"><img src="img/red-youtube.png" alt=""></a></li>
+                                            <li><a href="https://wa.me/5493624113117" target="_blank"><img src="img/red-whatsapp.png" alt=""></a></li>
+                                        </ul>
+                            </nav>
+            </header>
+
+                <main class="formulario-principal">
+                      <section class="lavisita">
+                        <h1>Programá tu visita guiada</h1>
+                        <p>Campos obligatorios*</p>
+                        
+                        <form method="post" action="mailto:chaguaresadm@gmail.com?subject=Visita guiada" target="_blank" enctype="text/plain">
+                            <div class="formulito">
+                                <label>* Correo</label>
+                                <input type="email" name="Email" id="Email" placeholder="Correo" required>
+
+                                <label for="Nombre">* Nombre y apellido</label>
+                                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre completo" required>
+                            
+                                <label for="Telefono">* Teléfono</label>
+                                <input type="text" name="Telefono" id="Telefono" maxlength="30" placeholder="Numero de telefono" required>
+
+                                <p class="titulo">* Edad de los visitantes</p> 
+                                <div class="opciones-grupo">
+                                    <label><input type="checkbox" name="edad_0_10" value="0 a 10"> 0 a 10</label>
+                                    <label><input type="checkbox" name="edad_11_17" value="11 a 17"> 11 a 17</label>
+                                    <label><input type="checkbox" name="edad_mas_18" value="+18"> +18</label>
+                                </div>
+
+                                <p class="titulo">* Cuántas personas van?</p>
+                                <div class="opciones-grupo">
+                                    <label><input type="radio" name="cantidad_personas" value="1" checked> 1</label>
+                                    <label><input type="radio" name="cantidad_personas" value="2"> 2</label>
+                                    <label><input type="radio" name="cantidad_personas" value="3"> 3</label>
+                                    <label><input type="radio" name="cantidad_personas" value="4"> 4</label>
+                                    <label><input type="radio" name="cantidad_personas" value="5"> 5</label>
+                                    <label><input type="radio" name="cantidad_personas" value="6"> 6</label>
+                                    <label><input type="radio" name="cantidad_personas" value="7 o mas"> 7 o más</label>
+                                </div>
+
+                                <p class="titulo">* Adjuntar comprobante</p>
+                                <p class="CBU">Mercado Pago</p>
+                                <p class="CBU">Los Chaguares</p>
+                                <p class="CBU">Fundación bosques para el futuro</p>
+                                <p class="CBU">CBU: 0000003100077660407289</p>
+                                <p class="CBU">ALIAS: cuidemoslosbosques</p>
+
+                                <div class="file-input-container">
+                                    <input type="file" name="comprobante" id="comprobante" class="input-file">
+                                    <label for="comprobante" class="button-file">Subir archivo</label>
+                                    <span id="file-name">Ningún archivo seleccionado</span>
+                                </div>
+
+
+                                <div class="botones-formulario">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                            </div>
+                        </form>
+                </section>
+                <div class="derecha-precio">
+                    <section id="precios">
+                        <h2>Precios</h2>
+                        <p class="tarifa">Tarifa general Extranjeros $15.000</p>
+                        <p class="tarifa">Tarifa Residentes Nacionales $12.000 </p>
+                        <p class="tarifa">Tarifa Residentes Chaqueños $10.000</p>
+
+                        <p>Promo por familia 50 % de descuento para niños entre 6 y 12 años.</p>
+
+                        <p class="aclaracion">Para confirmar el turno deberá señar por el valor del 50% del total de las entradas a adquirir y abonar el otro 50% restante antes de la visita.</p>
+                    </section>
+
+                    <section id="importante">
+                        <h2>Importante</h2>
+                        <p>En el caso de no poder asistir en el día y horario acordado, avisar por lo menos 12 hs antes del turno para reprogramar la visita. De no avisar y no presentarse en el horario indicado se perderá el turno y la seña abonada.</p>
+                        <p>¡Los esperamos!</p>
+
+                    </section>
+                </div>                    
+
+                </main>
+            
+                <footer>
+
+                </footer>
+                
+        </body>
+</html>
