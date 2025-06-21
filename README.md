@@ -1,6 +1,9 @@
 Sofi:
 Tamaño de pantalla: 1366x768
 Editor de codigo: Visual Studio Code.
+Yo me encargué de armar los archivos HTML de las páginas de escuelas, formulario, galería, planea tu visita y qué hacer. Me aseguré de vincular todo bien para que la navegación sea súper fluida y sin errores. Escribí todo el código con mucho cuidado para que cada página quede igualita al diseño que hicimos en Figma, cuidando que sea una representación fiel y prolija. Además, me ocupé de aplicar los estilos en CSS para que todo tenga la misma onda visual y quede armonioso en todo el proyecto.
+No voy a mentir, lloré bastante con algunos momentos de frustración, pero seguí adelante y le puse toda la garra. También me encargué de hacer la animación del coaticito en JavaScript.
+
 Zai:
 Tamano de pantalla: 1920x1080
 Editor de codigo: Visual Studio Code.
