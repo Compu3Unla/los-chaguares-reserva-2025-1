@@ -123,6 +123,24 @@
                     </ul>
                 </div>
             </footer>
+            <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const menuButton = document.querySelector('.social-media-fixed-menu ul li > a');
+                            const parentLi = menuButton.closest('li');
+
+                            menuButton.addEventListener('click', function(event) {
+                                event.preventDefault(); 
+
+                                parentLi.classList.toggle('active');
+                            });
+
+                            document.addEventListener('click', function(event) {
+                                if (!parentLi.contains(event.target) && parentLi.classList.contains('active')) {
+                                    parentLi.classList.remove('active'); 
+                                }
+                            });
+                        });
+                    </script>
     <script src="coati.js"></script>
 
         </body>
