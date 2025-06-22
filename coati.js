@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     const loaderWrapper = document.getElementById('loader-wrapper');
     const mainContent = document.getElementById('content');
 
-    const minDisplayTime = 10000; 
+    const minDisplayTime = 3000; 
 
     const loadTime = Date.now();
 
