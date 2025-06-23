@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reserva Los Chaguares</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../img/favicon.png" type= "image/x-icon">
+        <link rel="stylesheet" href="../estilos.css">
+        
+    </head>
+        <body class="escuelas-page">
+            <header class="main-header">
+                    <nav class="navbar">
+                        <div class="logo">
+                            <a href="../index.html"><img src="../img/isologo-chaguares.png" alt="Logo Chaguares"></a>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="../quehacer.html">QUE HACER</a></li>
+                            <li><a href="../planeatuvisita.html">PLANEA TU VISITA</a></li>
+                            <li><a href="../escuelas.html">ESCUELAS</a></li>
+                            <li><a href="../galeria.html">GALERÍA</a></li>
+                        </ul>
+                            <nav class="social-media-fixed-menu-wrapper">
+                                <div class="social-media-fixed-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="../img/red-menu.png" alt="Abrir menú de redes sociales"> 
+                                            </a>
+                                            <ul class="dropdown">
+                                                <li><a href="https://www.facebook.com/ReservaNaturalLosChaguares" target="_blank"><img src="../img/red-facebook.png" alt=""></a></li>
+                                                <li><a href="https://www.instagram.com/loschaguares/" target="_blank"><img src="../img/red-instagram.png" alt=""></a></li>
+                                                <li><a href="https://www.youtube.com/@loschaguares" target="_blank"><img src="../img/red-youtube.png" alt=""></a></li>
+                                                <li><a href="https://wa.me/5493624113117" target="_blank"><img src="../img/red-whatsapp.png" alt=""></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </nav>
+            </header>
+        <main class="bird-detail-page-main">
+            <section class="bird-detail-section">
+                <div class="bird-detail-inner">
+                    <img src="../img/info-espinero.png" alt="Espinero grande" class="bird-detail-img"> 
+                    
+                    <div class="bird-detail-text-column"> 
+                        <h1>Espinero grande</h1> 
+                        <p>El espinero grande en Argentina y Paraguay (Phacellodomus ruber), también denominado tiotío grande (en Uruguay),es una especie de ave paseriforme de la familia Furnariidae perteneciente al género Phacellodomus. </p>
+                        <h2>Distribución y hábitat</h2>
+                        <p>Se distribuye por el centro norte y este de Bolivia (La Paz, Beni, este de Santa Cruz), interior sur del Brasil (sur de Mato Grosso y Mato Grosso do Sul al este hasta el oeste de Bahía, al sur hasta el noroeste de São Paulo y noroeste de Paraná, también oeste de Rio Grande do Sul), Paraguay y norte de Argentina (Salta y Formosa al sur hasta Tucumán, Santa Fe, Entre Ríos y Corrientes) y en el extremo nordeste de Uruguay.
+
+Esta especie es considerada bastante común en sus hábitats naturales: el sotobosque de bosques en galería y áreas arbustivas, casi invariablemente cerca de agua; localmente hasta los 1400 m de altitud en Bolivia.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+              <footer>
+                <div class="foot-left">
+                 <p>©Todos los derechos reservados - Reserva Los Chaguares Chaco 2015 </p>
+                </div>
+                <div class="foot-right">
+                    <ul>
+                        <li><img src="../img/logo-chaguares.png" width="126px" height="40px" alt="logo Chaguares"></li>
+                        <li><img src="../img/chaco1.png" alt="logo Chaco" width="60px" height="40px"></li>
+                        <li><img src="../img/chacoo.png" alt="logo Mas info chaco" width="54" height="52px"></li>
+                    </ul>
+                </div>
+              </footer>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const menuButton = document.querySelector('.social-media-fixed-menu ul li > a');
+                            const parentLi = menuButton.closest('li');
+
+                            menuButton.addEventListener('click', function(event) {
+                                event.preventDefault(); 
+
+                                parentLi.classList.toggle('active');
+                            });
+
+                            document.addEventListener('click', function(event) {
+                                if (!parentLi.contains(event.target) && parentLi.classList.contains('active')) {
+                                    parentLi.classList.remove('active'); 
+                                }
+                            });
+                        });
+                    </script>
+    </body>
+</html>
