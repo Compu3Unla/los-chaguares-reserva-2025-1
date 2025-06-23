@@ -52,7 +52,6 @@ body.home-page .navbar {
 .carousel-inicio {
     position: relative;
     width: 100%;
-    height: 80%;
     overflow: hidden;
 }
 
@@ -79,7 +78,6 @@ body.home-page .navbar {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, var 0%, var 40%, rgba(5, 45, 40, 0) 100%);
     z-index: 1;
     pointer-events: none;
 }
@@ -155,6 +153,7 @@ body.home-page .navbar {
     max-width: 100%;
     height: auto;
     display: block;
+    z-index: 8;
 }
 
 .aves .bird-card h3 {
@@ -172,6 +171,7 @@ body.home-page .navbar {
     white-space: nowrap;
     overflow: hidden;
     font-size: 1.125rem;
+    z-index: 8;
 }
 
 
@@ -186,7 +186,7 @@ body.home-page .navbar {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
-    z-index: 5;
+    z-index: 1;
 }
 
 .about {
@@ -323,22 +323,90 @@ body.home-page .navbar {
 }
 
 .reviews {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: #33A152;
-    text-align: left;
+    background-color: #f0f0f0; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+.reviews-carousel-container {
     position: relative;
-    z-index: 1;
+    width: 100%; 
+    margin: 40px auto; 
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    height: 300px; 
+}
+
+.reviews-slides {
+    display: flex;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    transition: opacity 1s ease-in-out; 
+}
+
+.review-slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
+}
+
+.review-slide.active {
+    opacity: 1; 
 }
 
 
-.review-grid {
+.review-slide .review-text {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1em;
+    line-height: 1.6;
+    color: black; 
+    margin-bottom: 20px;
+    max-width: 700px; 
+}
+
+.review-slide .reviewer-name {
+    font-family: 'Zilla Slab', serif; 
+    font-weight: 700;
+    font-size: 1em;
+    color: black; 
+}
+
+
+.reviews-dots-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5%;
-    max-width: 100%;
-    margin: 0 auto;
+    gap: 10px; 
+    z-index: 10; 
+}
+
+.review-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-dot.active {
+    background-color: white; 
 }
 
 .review-card-verde {
