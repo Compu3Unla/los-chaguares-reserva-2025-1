@@ -1515,28 +1515,29 @@ footer {
         margin-bottom: 20px;
     }
 
-    .botones-escuela {
-        flex-direction: column; 
-        gap: 10px;
-        align-items: center; 
-        justify-content: center;
+.botones-escuela {
+        flex-direction: row; 
+        flex-wrap: wrap;   
+        justify-content: center; 
+        gap: 15px; 
     }
 
     .botones-escuela .button {
-        flex-direction: column; 
-        text-align: center; 
-        padding: 15px 10px; 
-        width: 100%; 
-        max-width: 250px; 
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+        width: calc(50% - 10px); 
+        box-sizing: border-box;
+        max-width: 180px; 
+        min-width: 120px; 
     }
 
     .botones-escuela .button img {
-        margin-right: 0; 
-        margin-bottom: 5px; 
-        width: 60px; 
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 60px;
         height: auto;
     }
-
     #edu-ambiental {
         padding: 20px 15px; 
     }
