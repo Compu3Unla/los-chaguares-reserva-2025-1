@@ -8,9 +8,14 @@ La verdad, hubo momentos de pura frustración. No tanto con el código en sí, s
 Zai:
 Tamano de pantalla: 1920x1080
 Editor de codigo: Visual Studio Code.
-Armé el archivo index.html, donde organicé todo el contenido utilizando etiquetas semánticas para mantener el orden y la claridad en la estructura del sitio. Incorporé las tipografías desde Google Fonts, utilizando Inter para los textos y Zilla Slab para los títulos, respetando lo definido en el diseño original.
-Luego trabajé en el archivo styles.css, aplicando los estilos generales: definí la paleta de colores, los tamaños de texto, el espaciado entre elementos y los estilos del botón.
-Busqué que el diseño se mantuviera visualmente limpio, jerárquico y armónico. Para lograrlo, presté especial atención al espaciado, el alineamiento, el uso de blancos y el contraste entre tipografía y fondo
+Me encargué de armar el archivo index.html, donde organicé todo el contenido utilizando etiquetas semánticas para mantener el orden y la claridad en la estructura del sitio. Incorporé las tipografías desde Google Fonts, utilizando Inter para los textos y Zilla Slab para los títulos, respetando lo definido en el diseño original.
+Luego trabajé en el archivo .css, aplicando los estilos generales: definí la paleta de colores, los tamaños de texto, el espaciado entre elementos y los estilos del botón. Busqué que el diseño se mantuviera visualmente limpio, jerárquico y armónico. Para lograrlo, presté especial atención al espaciado, el alineamiento, el uso de blancos y el contraste entre tipografía y fondo.
+Además, desarrollé dos componentes clave de la página:
+*El carousel de inicio, que permite pasar las imágenes con flechas.
+*El carousel de reseñas de TripAdvisor, que redirige a la web de TripAdvisor al hacer clic.
+Fueron secciones especialmente desafiantes a nivel técnico. Sufrí bastante mientras intentaba hacer que funcionaran correctamente, pero después de varias pruebas y ajustes, logré que ambos carouseles quedaran funcionales y estéticamente integrados al diseño general.
+
+
 
 Comentarios  intento primer entrega:
 Al momento de subir nuestros avances, se generaron conflictos en los archivos, aparecían líneas superpuestas, a pesar de que cada una había agregado saltos de línea y espacios para ordenar el contenido y evitar justamente este tipo de problemas.
