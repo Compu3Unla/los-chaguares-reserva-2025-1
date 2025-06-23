@@ -6,51 +6,46 @@ body{
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 5%;
-  background-color: #215B3C;
-  position: sticky;
-  top: 0;
-  z-index: 998; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: #215B3C;
+    position: sticky;
+    top: 0;
+    z-index: 998;
 }
 
 body.home-page .navbar {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar .logo img {
-  height: 2.5em;
+    height: 2.5em; 
 }
 
 .navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar .nav-links li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .navbar .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Zilla Slab', serif;
-  font-weight: bold;
-  font-size: 1em;
-}
-
-.nav-links{
+    text-decoration: none;
+    color: white;
     font-family: 'Zilla Slab', serif;
     font-weight: bold;
+    font-size: 1em;
 }
 
 .carousel-inicio {
@@ -357,6 +352,7 @@ body.home-page .navbar {
     box-sizing: border-box;
 }
 
+
 .social-media-fixed-menu-wrapper {
     position: fixed;
     top: 50%;
@@ -384,14 +380,14 @@ body.home-page .navbar {
     align-items: center;
 }
 
-.social-media-fixed-menu ul li > a img { 
+.social-media-fixed-menu ul li > a img {
     height: 30px;
     vertical-align: middle;
     transition: transform 0.3s ease-in-out;
 }
 
-.social-media-fixed-menu ul li.active > a img { 
-    transform: rotate(45deg); 
+.social-media-fixed-menu ul li.active > a img {
+    transform: rotate(45deg);
 }
 
 .social-media-fixed-menu .dropdown {
@@ -401,9 +397,9 @@ body.home-page .navbar {
     position: absolute;
     top: auto;
     right: auto;
-    left: 0; 
+    left: 0;
     bottom: calc(100% + 10px);
-    background-color: transparent;
+    background-color: transparent; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     opacity: 0;
     visibility: hidden;
@@ -483,9 +479,11 @@ body.home-page .navbar {
 
 #Actividades {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .tarjeta-act {
@@ -498,7 +496,7 @@ body.home-page .navbar {
 }
 
 .tarjeta-act img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -520,6 +518,7 @@ body.home-page .navbar {
     color: black;
     font-size: 0.9em;
     line-height: 1.5;
+    flex-grow: 1; 
 }
 
 .el-boton {
@@ -533,22 +532,24 @@ body.home-page .navbar {
     margin: 15px;
     font-size: 0.9em;
     text-align: center;
-    align-self: flex-start;
+    align-self: flex-start; 
 }
 
-
 main.quehacer-act {
-    max-width: 1000px; 
-    margin: 0 auto; 
-    padding-top: 30px; 
-    padding-bottom: 30px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
 
 main.quehacer-act h1 {
     font-size: 2.5em;
-    text-align: left; 
+    text-align: left;
     margin-bottom: 30px;
 }
+
 
 /*PLANEA TU VISITA*/
 
@@ -1329,7 +1330,7 @@ footer {
 
 .foot-left {
     align-content: center;
-    padding-left: 20px; 
+    padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 5px;
     margin-top: 0px;
@@ -1343,98 +1344,113 @@ footer {
     padding-right: 20px;
 }
 
+
 /* ========================================= */
 /* Media Queries para Responsive Design      */
 /* ========================================= */
 
-/* RESPONSIVE QUE HACER */
+
 @media (max-width: 600px) {
 
     .navbar {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 1em 5%; 
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 5%;
     }
 
     .navbar .logo {
-        margin-bottom: 1em; 
+        margin-bottom: 1em;
     }
 
     .navbar .nav-links {
-        flex-direction: column; 
-        width: 100%; 
+        flex-direction: column;
+        width: 100%;
         gap: 0; 
-        text-align: center; 
+        text-align: center;
     }
 
     .navbar .nav-links li {
-        width: 100%; 
-        padding: 0.5em 0; 
-	border-top: 1px solid rgba(255, 255, 255, 0.3)
+        width: 100%;
+        padding: 0.8em 0; 
+        border-top: 1px solid rgba(255, 255, 255, 0.3); 
     }
-	
+
     .navbar .nav-links li:last-child {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
     }
 
     .navbar .nav-links a {
-        font-size: 1.1em; 
-	display: block;
-	width: 100%
+        font-size: 1.1em;
+        display: block; 
+        width: 100%;
     }
 
     .social-media-fixed-menu-wrapper {
-        position: static; 
+        position: fixed;
+        bottom: 20px;    
+        right: 20px;     
+        top: auto;      
+        left: auto;     
         transform: none; 
-        margin-top: 1em; 
+        z-index: 1000;   
     }
 
     .social-media-fixed-menu .dropdown {
-        left: 50%; 
+        bottom: calc(100% + 10px); 
+        left: 50%;
         transform: translateX(-50%);
-        bottom: calc(100% + 5px); 
     }
 
     #Actividades {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 0 15px; 
     }
 
     .tarjeta-act {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         align-items: center; 
-        text-align: center; 
+        text-align: center;
     }
 
     .tarjeta-act p {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .el-boton {
         align-self: center; 
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
+
 
     footer {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
         text-align: center;
-        padding: 15px 0; 
+        padding: 15px 0;
     }
 
     .foot-left {
-        padding: 0 15px; 
-        margin-bottom: 10px; 
+        padding: 0 15px;
+        margin-bottom: 10px;
     }
 
     .foot-right ul {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         padding: 0;
     }
 
     .foot-right ul li {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
+    }
+
+    main.quehacer-act {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main.quehacer-act h1 {
+        text-align: center; 
     }
 }
 
