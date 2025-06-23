@@ -42,7 +42,7 @@
 
             </header>
                       
-            <section class="carousel-inicio">
+            <section class="carousel-inicio" id="heroCarousel">
                 <div class="slides">
                     <div class="slide" style="background-image: url('img/carrusel-1.png');"></div>
                     <div class="slide" style="background-image: url('img/carrusel-2.png');"></div>
@@ -56,9 +56,9 @@
             <section class="aves">
                 <h2>Aves destacadas</h2>
                 <div class="birds">
-                    <a href="#" class="bird-card"><img src="img/mainpajaros-2.png" alt="Alicucu" /><h3>Alicucu común</h3></a>
-                    <a href="#" class="bird-card"><img src="img/mainpajaros-3.png" alt="Carpintero" /><h3>Carpintero lomo blanco</h3></a>
-                    <a href="#" class="bird-card"><img src="img/mainpajaros-5.png" alt="Espinero" /><h3>Espinero grande</h3></a>
+                    <a href="aves/alicucu.html" class="bird-card"><img src="img/mainpajaros-2.png" alt="Alicucu" /><h3>Alicucu común</h3></a>
+                    <a href="aves/carpintero.html" class="bird-card"><img src="img/mainpajaros-3.png" alt="Carpintero" /><h3>Carpintero lomo blanco</h3></a>
+                    <a href="aves/espinero.html" class="bird-card"><img src="img/mainpajaros-5.png" alt="Espinero" /><h3>Espinero grande</h3></a>
                 </div>
             </section>
 
@@ -77,21 +77,39 @@
                 </div>
             </section>
 
-            <section class="reviews">
-                <div class="review-grid">
-                    <div class="review-card-verde">
-                    <p class="review-text">"Una experiencia increíble para toda la familia. Los senderos están muy bien cuidados y la variedad de aves es impresionante. ¡Volveremos pronto!"</p>
-                    <p class="reviewer-name">Sofía M.</p>
-                    </div>
-                </div>
-            </section>
+<section class="reviews">
+    <div class="reviews-carousel-container" id="reviewscarousel">
+        <div class="reviews-slides">
+            <div class="review-slide" style="background-color: #33A152;">
+                <p class="review-text">Para conocer y amar el Monte Chaqueño, una guía formidable por la Selva de Rivera Chaqueña, Vimos Pájaros, Monos, Yacarés y huellas de ciervos llamados Guazunchos.</p>
+                <p class="reviewer-name">Néstor B.</p>
+            </div>
 
-            <div id="loader-wrapper">
-                <img src="img/coati.png" alt="Cargando..." id="coati-loader">
+            <div class="review-slide" style="background-color: #D19033;">
+                <p class="review-text">Hermoso lugar! Fuimos a visitar con 3 amigas, fuimos recibidas y guiadas muy amablemente por un guía local, muy predispuesto y con mucha información. Realmente recomendable para conocer y valorar la belleza natural de nuestro Chaco.</p>
+                <p class="reviewer-name">María Laura F.</p>
             </div>
-            <div id="content" style="display: none;">
-                <h1>¡Bienvenido a Los Chaguares!</h1>
+
+            <div class="review-slide" style="background-color: #A8CDE2;">
+                <p class="review-text">Un paseo fantástico. Tiene 2 senderos. Es mejor y muy atractivo el sendero largo con sus vistas al río. Especial para los que amamos la naturaleza y la fotografía. Es mejor no ir cuando llueve mucho o cuando el río está alto.</p>
+                <p class="reviewer-name">Claudia M.</p>
             </div>
+
+            <div class="review-slide" style="background-color: #A59379;">
+                <p class="review-text">Soy docente, hace dos años que llevo a mis alumnos a recorrer esta reserva ecológica. Sean niños pequeños o de los grados superiores, disfrutan muchísimo de las novedades que conocen, quedan maravillados por la belleza de nuestro monte chaqueño, su fauna y su flora. La visita es guiada por personal muy calificado, excelente atención. Brinda a los niños un aprendizaje muy significativo.</p>
+                <p class="reviewer-name">Rosario B.</p>
+            </div>
+        </div>
+        <div class="reviews-dots-container">
+        </div>
+    </div>
+</section>
+
+    <div id="loader-wrapper">
+        <img src="img/coati.png" alt="Cargando..." id="coati-loader">
+    </div>
+    <div id="content" style="display: none;">
+    </div>
 
             <footer>
                 <div class="foot-left">
@@ -123,7 +141,10 @@
                             });
                         });
                     </script>
+
     <script src="coati.js"></script>
+    <script src="carousel-inicio.js"></script>
+    <script src="reviews-carousel.js"></script>
 
         </body>
 
