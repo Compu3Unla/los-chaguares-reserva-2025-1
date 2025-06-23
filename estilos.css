@@ -1352,7 +1352,7 @@ footer {
 
     .navbar {
         flex-direction: column; 
-        align-items: flex-start; 
+        align-items: center; 
         padding: 1em 5%; 
     }
 
@@ -1363,17 +1363,24 @@ footer {
     .navbar .nav-links {
         flex-direction: column; 
         width: 100%; 
-        gap: 0.5em; 
+        gap: 0; 
         text-align: center; 
     }
 
     .navbar .nav-links li {
         width: 100%; 
         padding: 0.5em 0; 
+	border-top: 1px solid rgba(255, 255, 255, 0.3)
+    }
+	
+    .navbar .nav-links li:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .navbar .nav-links a {
         font-size: 1.1em; 
+	display: block;
+	width: 100%
     }
 
     .social-media-fixed-menu-wrapper {
