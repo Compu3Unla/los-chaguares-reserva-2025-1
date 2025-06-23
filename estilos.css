@@ -1717,21 +1717,22 @@ footer {
     }
 
     .file-input-container {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start; 
-        gap: 8px;
+        gap: 8px; 
     }
 
     .button-file {
-        width: 100%; 
-        text-align: center;
-        padding: 10px;
+        width: auto; 
+        max-width: 200px; 
+        text-align: center; 
+        padding: 10px 15px; 
         font-size: 0.9em;
     }
 
     #file-name {
         max-width: 100%; 
-        word-break: break-word;
+        text-align: left; 
     }
 
     .botones-formulario {
