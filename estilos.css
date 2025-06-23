@@ -555,6 +555,7 @@ main.quehacer-act h1 {
 
 .reservas {
     max-width: 800px; 
+    margin: 40px auto 20px auto; 
     text-align: center;
     padding: 0 20px; 
 }
@@ -567,6 +568,7 @@ main.quehacer-act h1 {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    margin-left: 115px;
     font-size: 0.9em;
     text-align: center;
     align-self: flex-start;
@@ -575,6 +577,7 @@ main.quehacer-act h1 {
 
 #reservas h1 {
     font-size: 2.5em;
+    margin-left:115px;
     color: black;
     margin-bottom: 15px;
 }
@@ -583,19 +586,20 @@ main.quehacer-act h1 {
     font-family: 'Inter', sans-serif;
     font-size: 1.1em;
     line-height: 1.6;
+    margin-left: 115px;
     margin-bottom: 25px;
     max-width: 760px;
 }
 
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1000px; 
-    margin: 30px auto;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 30px auto; 
     padding: 0 20px; 
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 
