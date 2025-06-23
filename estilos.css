@@ -1490,8 +1490,85 @@ footer {
     border-radius: 5px;
     margin: 20px auto; 
     font-size: 0.9em;
-    text-align: center;
+    text-align: center; }
 
+  .escuelas-main {
+        flex-direction: column; 
+        gap: 30px; 
+        padding: 20px 15px; 
+        align-items: center; 
+    }
+
+    .izquierda-escuela {
+        padding: 0 15px; 
+        min-width: unset; 
+        text-align: center; 
+    }
+
+    .izquierda-escuela h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .izquierda-escuela p {
+        font-size: 1em; 
+        margin-bottom: 20px;
+    }
+
+    .botones-escuela {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .botones-escuela .button {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 15px 10px; 
+        width: 100%; 
+        max-width: 250px; 
+    }
+
+    .botones-escuela .button img {
+        margin-right: 0; 
+        margin-bottom: 5px; 
+        width: 60px; 
+        height: auto;
+    }
+
+    #edu-ambiental {
+        padding: 20px 15px; 
+    }
+
+    #edu-ambiental h2 {
+        font-size: 1.5em; 
+        margin-bottom: 20px;
+    }
+
+    #edu-ambiental article {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        gap: 10px; 
+        padding: 10px; 
+    }
+
+    #edu-ambiental article img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #edu-ambiental article p {
+        font-size: 0.9em; 
+    }
+
+    #edu-ambiental .el-boton {
+        display: block;
+        margin: 10px auto; 
+        width: fit-content; 
+    }
+			
 }
 
 
