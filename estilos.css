@@ -475,6 +475,70 @@ body.home-page .navbar {
 }
 
 
+.bird-detail-page-main {
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 0 15px; 
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+}
+
+.bird-detail-section {
+    background-color: #fff;
+    padding: 25px; 
+}
+
+.bird-detail-inner {
+    display: flex;
+    flex-direction: row-reverse; 
+    gap: 30px; 
+    align-items: stretch; 
+}
+
+.bird-detail h1 { 
+    font-size: 2.5em; 
+    color: #000000; 
+    margin-top: 0;
+    font-family: 'Zilla Slab', serif;
+    margin-bottom: 20px;
+}
+
+.bird-detail h2 {
+    font-size: 1.8em; 
+    color: #000000; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.bird-detail p {
+    font-size: 1.1em; 
+    line-height: 1.7;
+    color: #000000; 
+    margin-bottom: 15px;
+    font-family: 'Zilla Slab', serif;
+}
+
+
+.bird-detail-img {
+
+    width: 45%; 
+    height: auto; 
+    min-height: 250px; 
+    object-fit: contain; 
+    flex-shrink: 0; 
+    padding: 5px; 
+}
+
+.bird-detail-text-column {
+    flex-grow: 1;
+    width: 55%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+
 /*QUE HACER*/
 
 #Actividades {
