@@ -486,6 +486,10 @@ body.home-page .navbar {
     padding: 20px; 
 }
 
+#Actividades h1 {
+    margin-left: 20px;
+}
+
 .tarjeta-act {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -791,7 +795,7 @@ main.quehacer-act h1 {
     align-items: center; 
     padding: 50px;
     margin-bottom: 60px;
-    margin-left:180px;
+    margin-left:190px;
 }
 
 
@@ -839,7 +843,7 @@ main.quehacer-act h1 {
 
 .la-galery h1{
     font-size: 2.5em;
-    margin-left: 180px;
+    margin-left: 190px;
 }
 
 #galeria-oculta {
