@@ -553,19 +553,30 @@ main.quehacer-act h1 {
 
 /*PLANEA TU VISITA*/
 
-#reservas {
-    max-width: 1000px; 
-    margin: 40px auto 20px auto; 
-    text-align: center; 
+.reservas {
+    max-width: 800px; 
+    text-align: center;
     padding: 0 20px; 
 }
+
+.reserva-boton {
+    background-color: #33A152;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    align-self: flex-start;
+}
+
 
 #reservas h1 {
     font-size: 2.5em;
     color: black;
     margin-bottom: 15px;
-    margin-left: auto; 
-    margin-right: auto;
 }
 
 #reservas p {
@@ -573,22 +584,7 @@ main.quehacer-act h1 {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 25px;
-    max-width: 760px; 
-    margin-left: auto;   
-    margin-right: auto;
-    text-align: center; 
-}
-
-.reserva-boton {
-    background-color: #33A152;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    display: block; 
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 20px auto; 
-    text-align: center;
+    max-width: 760px;
 }
 
 
