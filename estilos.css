@@ -496,7 +496,8 @@ body.home-page .navbar {
     align-items: stretch; 
 }
 
-.bird-detail h1 { 
+
+.bird-detail-text-column h1 { 
     font-size: 2.5em; 
     color: #000000; 
     margin-top: 0;
@@ -504,15 +505,15 @@ body.home-page .navbar {
     margin-bottom: 20px;
 }
 
-.bird-detail h2 {
-    font-size: 1.8em; 
-    color: #000000; 
+
+.bird-detail-text-column h2 { 
+    color: #000000;
     margin-top: 30px;
     margin-bottom: 15px;
     font-family: 'Zilla Slab', serif;
 }
 
-.bird-detail p {
+.bird-detail-text-column p { 
     font-size: 1.1em; 
     line-height: 1.7;
     color: #000000; 
@@ -521,14 +522,37 @@ body.home-page .navbar {
 }
 
 
-.bird-detail-img {
-
-    width: 45%; 
-    height: auto; 
-    min-height: 250px; 
-    object-fit: contain; 
+.bird-image-container-ali {
+    width: 50%; 
     flex-shrink: 0; 
-    padding: 5px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-image: url('img/info-alicucu.png'); 
+    height: 100%; 
+    min-height: 500px; 
+}
+
+.bird-image-container-carpi {
+    width: 50%; 
+    flex-shrink: 0; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-image: url('img/info-carpintero.png'); 
+    height: 100%; 
+    min-height: 500px; 
+}
+
+.bird-image-container-espi {
+    width: 50%; 
+    flex-shrink: 0; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-image: url('img/info-espinero.png'); 
+    height: 100%; 
+    min-height: 500px; 
 }
 
 .bird-detail-text-column {
